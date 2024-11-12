@@ -2,7 +2,7 @@ import re
 from os import getenv
 
 from dotenv import load_dotenv
-from pyrogram import filters
+from pyrogram import filter
 
 load_dotenv()
 
@@ -19,10 +19,10 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID"-1002415828975, None))
+LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID"7748891643, None))
+OWNER_ID = int(getenv("OWNER_ID", None))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
